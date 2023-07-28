@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "coursemod:block/sweatrite_block"
+    }
+  }
+}

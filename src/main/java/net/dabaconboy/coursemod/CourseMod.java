@@ -1,6 +1,7 @@
 package net.dabaconboy.coursemod;
 
 import com.mojang.logging.LogUtils;
+import net.dabaconboy.coursemod.block.ModBlocks;
 import net.dabaconboy.coursemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,8 @@ public class CourseMod {
 
         ModItems.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -47,6 +50,10 @@ public class CourseMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SWEATRITE);
 
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.SWEATRITE_BLOCK);
         }
 
     }
