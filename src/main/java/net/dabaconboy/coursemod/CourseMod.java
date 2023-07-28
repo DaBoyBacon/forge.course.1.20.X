@@ -46,7 +46,7 @@ public class CourseMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SWEATRITE);
-            event.accept(ModItems.RAW_SWEATRITE);
+
         }
 
     }
