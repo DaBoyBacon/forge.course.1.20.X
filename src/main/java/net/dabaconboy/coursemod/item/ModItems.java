@@ -14,8 +14,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
-    public static final RegistryObject<Item> RAW_SWEATRITE = ITEMS.register("raw_sweatrite",
-            () -> new Item(new Item.Properties()));
+
 
 
 
