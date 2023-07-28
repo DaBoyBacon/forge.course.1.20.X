@@ -2,7 +2,6 @@ package net.dabaconboy.coursemod.block;
 
 import net.dabaconboy.coursemod.CourseMod;
 import net.dabaconboy.coursemod.item.ModItems;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
