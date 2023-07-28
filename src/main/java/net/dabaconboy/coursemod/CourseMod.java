@@ -20,7 +20,7 @@ public class CourseMod {
     public static final String MOD_ID = "coursemod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
+    private int x = 0;
 
 
     public CourseMod() {
