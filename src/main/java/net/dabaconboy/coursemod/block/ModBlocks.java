@@ -25,8 +25,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
 
-    public static final RegistryObject<Block> SWEATRITE_ORE = registerBlock
-    ("sweatrite_ore",
+    public static final RegistryObject<Block> SWEATRITE_ORE = registerBlock("sweatrite_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
