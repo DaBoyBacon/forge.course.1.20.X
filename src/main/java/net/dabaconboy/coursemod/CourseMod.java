@@ -2,6 +2,7 @@ package net.dabaconboy.coursemod;
 
 import com.mojang.logging.LogUtils;
 import net.dabaconboy.coursemod.block.ModBlocks;
+import net.dabaconboy.coursemod.item.ModCreativeModeTabs;
 import net.dabaconboy.coursemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,8 @@ public class CourseMod {
 
     public CourseMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 

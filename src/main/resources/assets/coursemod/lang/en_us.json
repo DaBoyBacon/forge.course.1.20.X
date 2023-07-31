@@ -2,6 +2,8 @@
   "item.coursemod.sweatrite": "Sweatrite",
 
 
-  "block.coursemod.sweatrite_block": "Block of Sweatrite"
+  "block.coursemod.sweatrite_block": "Block of Sweatrite",
+
+  "creativetab.course_tab": "Course Tab"
 
 }
