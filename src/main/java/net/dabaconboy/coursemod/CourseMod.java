@@ -30,11 +30,13 @@ public class CourseMod {
     public CourseMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
+
 
         ModItems.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        //ModCreativeModeTabs.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);
@@ -50,7 +52,14 @@ public class CourseMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SWEATRITE);
 
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.SWEATRITE_BLOCK);
+        }
 
     }
 

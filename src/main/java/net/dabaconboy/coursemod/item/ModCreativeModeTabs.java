@@ -21,7 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((displayParameters, output) -> {
                         output.accept(ModItems.SWEATRITE.get());
                         output.accept(ModBlocks.SWEATRITE_BLOCK.get());
-                        output.accept(ModBlocks.SWEATRITE_ORE.get());
+                       // output.accept(ModBlocks.SWEATRITE_ORE.get());
 
             }).build());
 
