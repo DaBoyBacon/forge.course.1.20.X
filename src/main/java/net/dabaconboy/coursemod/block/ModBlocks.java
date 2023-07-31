@@ -6,7 +6,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,7 +25,16 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
 
-
+    public static final RegistryObject<Block> SWEATRITE_ORE = registerBlock
+    ("sweatrite_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.AMETHYST)
+            )
+    );
 
 
 
